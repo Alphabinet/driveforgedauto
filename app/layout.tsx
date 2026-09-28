@@ -12,7 +12,7 @@ const body = Barlow({ subsets: ["latin"], weight: ["400", "500", "600"], variabl
 const display = Barlow_Semi_Condensed({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-display-loaded", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
+  metadataBase: new URL(site.url || "https://driveforgedauto.com"),
   title: { default: `${site.name} | ${site.tagline}`, template: `%s | ${site.name}` },
   description: "PPF, ceramic coating and paint correction in Bisrakh, Greater Noida.",
   icons: {
